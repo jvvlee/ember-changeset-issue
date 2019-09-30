@@ -1,0 +1,17 @@
+<h1>Welcome to {{appName}}</h1>
+<br>
+<br>
+<div>
+  {{changeset.name}}
+</div>
+<div>
+  {{changeset.age}}
+</div>
+<ul>
+Bucket list
+{{#each-in changeset.bucket_list as |thing|}}
+<li>{{thing}}</li>
+{{/each-in}}
+</ul>
+<br>
+<br>
